@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .newspaper {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 4px double #000;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .newspaper-title {
+            font-size: 72px;
+            font-weight: bold;
+            font-family: 'Old English Text MT', serif;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .date-info {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .article {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .article h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .article .author {
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .article p {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .breaking {
+            grid-column: 1 / -1;
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .breaking h2 {
+            color: #ffcc00;
+            font-size: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .columns {
+                grid-template-columns: 1fr;
+            }
+            
+            .newspaper-title {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <header class="header">
+            <h1 class="newspaper-title">The Daily News</h1>
+            <p class="tagline">"All the News That's Fit to Print"</p>
+            <p class="date-info">Thursday, April 2, 2026 | Volume CLXXV | $2.50</p>
+        </header>
+
+        <div class="breaking">
+            <h2>BREAKING NEWS</h2>
+            <p>Major Technology Breakthrough Announced: Scientists Develop Revolutionary Clean Energy Solution</p>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <article class="article">
+                    <h2>Local Community Celebrates Annual Festival</h2>
+                    <p class="author">By Sarah Johnson</p>
+                    <p>
+                        The annual Spring Festival drew thousands of residents to the town square this weekend. 
+                        Families enjoyed live music, food vendors, and entertainment throughout the day. 
+                        Mayor Thompson praised the community spirit and announced plans for next year's event 
+                        to be even larger. Local businesses reported record sales during the celebration.
+                    </p>
+                </article>
+
+                <article class="article">
+                    <h2>New School Programs Show Promise</h2>
+                    <p class="author">By Michael Chen</p>
+                    <p>
+                        Educational initiatives launched last semester are showing positive results. Test scores 
+                        have improved by 15% across the district. Teachers credit the new curriculum and 
+                        additional resources for the success.
+                    </p>
+                </article>
+            </div>
+
+            <div class="column">
+                <article class="article">
+                    <h2>Sports: Hometown Team Wins Championship</h2>
+                    <p class="author">By David Martinez</p>
+                    <p>
+                        In a thrilling finale, the local basketball team secured their first championship 
+                        in 20 years. The final score of 98-95 had fans on the edge of their seats. 
+                        Coach Williams expressed pride in the team's dedication and hard work throughout 
+                        the season. Celebrations continued late into the night.
+                    </p>
+                </article>
+
+                <article class="article">
+                    <h2>Weather Forecast: Sunny Days Ahead</h2>
+                    <p class="author">By Emily Roberts</p>
+                    <p>
+                        Meteorologists predict clear skies and warm temperatures for the upcoming week. 
+                        Perfect conditions for outdoor activities are expected through the weekend.
+                    </p>
+                </article>
+            </div>
+
+            <div class="column">
+                <article class="article">
+                    <h2>Business District Sees Growth</h2>
+                    <p class="author">By James Wilson</p>
+                    <p>
+                        Downtown area experiences economic boom with ten new businesses opening this quarter. 
+                        Chamber of Commerce reports increased foot traffic and consumer confidence. 
+                        City officials are working on infrastructure improvements to support continued growth 
+                        in the region.
+                    </p>
+                </article>
+
+                <article class="article">
+                    <h2>Arts & Culture: Museum Opens New Exhibit</h2>
+                    <p class="author">By Lisa Anderson</p>
+                    <p>
+                        The City Museum unveiled its latest collection featuring contemporary artists. 
+                        The exhibit runs through summer and includes interactive installations.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
