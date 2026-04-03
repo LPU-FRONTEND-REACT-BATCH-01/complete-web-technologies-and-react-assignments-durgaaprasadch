@@ -1,100 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Booking Form</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="" method="post">
+      <label>Full Name:</label><br />
+      <input type="text" name="firstName" placeholder="First Name" required />
+      <input type="text" name="lastName" placeholder="Last Name" required />
 
-<form action="" method="post">
+      <br /><br />
 
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" id="male" required />
+      <label for="male">Male</label>
 
-    <label>Full Name:</label><br>
-    <input type="text" name="firstName" placeholder="First Name" required>
-    <input type="text" name="lastName" placeholder="Last Name" required>
-    <br><br>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+      <br /><br />
 
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="myemail@gmail.com"
+        required
+      />
+      <br /><br />
 
-
-    <label>Gender:</label>
-    <input type="radio" name="gender" value="male" id="male" required>
-    <label for="male">Male</label>
-
-    <input type="radio" name="gender" value="female" id="female">
-    <label for="female">Female</label>
-    <br><br>
-
-    
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" placeholder="myemail@gmail.com" required>
-    <br><br>
-
-    
-    <label for="room">Room Type:</label>
-    <select name="room" id="room" required>
+      <label for="room">Room Type:</label>
+      <select name="room" id="room" required>
         <option value="">--Select--</option>
         <option value="Single">Single</option>
         <option value="Double">Double</option>
         <option value="XL">XL</option>
-    </select>
-    <br><br>
+      </select>
+      <br /><br />
 
+      <label for="guests">No. of Guests:</label>
+      <input
+        type="number"
+        name="guests"
+        id="guests"
+        min="1"
+        max="10"
+        required
+      />
+      <br /><br />
 
-    <label for="guests">No. of Guests:</label>
-    <input type="number" name="guests" id="guests" min="1" max="10" required>
-    <br><br>
+      <label for="arrival">Arrival Date & Time:</label>
+      <input type="datetime-local" name="arrival" id="arrival" required />
+      <br /><br />
 
-    
-    <label for="arrival">Arrival Date & Time:</label>
-    <input type="datetime-local" name="arrival" id="arrival" required>
-    <br><br>
+      <label for="departure">Departure Date & Time:</label>
+      <input type="datetime-local" name="departure" id="departure" required />
+      <br /><br />
 
-   
-    <label for="departure">Departure Date & Time:</label>
-    <input type="datetime-local" name="departure" id="departure" required>
-    <br><br>
-
-  
-    <label for="city">City:</label>
-    <select name="city" id="city" required>
-
+      <label for="city">City:</label>
+      <select name="city" id="city" required>
         <optgroup label="Karnataka">
-            <option value="Bangalore">Bangalore</option>
-            <option value="Mysore">Mysore</option>
-            <option value="Hubballi">Hubballi</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Mysore">Mysore</option>
+          <option value="Hubballi">Hubballi</option>
         </optgroup>
 
         <optgroup label="Telangana">
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Khammam">Khammam</option>
-            <option value="Warangal">Warangal</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Khammam">Khammam</option>
+          <option value="Warangal">Warangal</option>
         </optgroup>
 
-        <optgroup label="Punjab"> 
-            <option value="Jalandhar">Jalandhar</option>
-            <option value="Amritsar">Amritsar</option>
-            <option value="Phagwara">Phagwara</option>
+        <optgroup label="Punjab">
+          <option value="Jalandhar">Jalandhar</option>
+          <option value="Amritsar">Amritsar</option>
+          <option value="Phagwara">Phagwara</option>
         </optgroup>
+      </select>
+      <br /><br />
 
-    </select>
-    <br><br>
+      <input type="checkbox" name="terms" id="terms" required />
+      <label for="terms">Agree Terms and Conditions</label>
+      <br /><br />
 
-    
-    <input type="checkbox" name="terms" id="terms" required>
-    <label for="terms">Agree Terms and Conditions</label>
-    <br><br>
+      <label for="requests">Special Requests:</label><br />
+      <textarea name="requests" id="requests" rows="3" cols="30"></textarea>
+      <br /><br />
 
-   
-    <label for="requests">Special Requests:</label><br>
-    <textarea name="requests" id="requests" rows="3" cols="30"></textarea>
-    <br><br>
-
-   
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit">
-
-</form>
-
-</body>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
