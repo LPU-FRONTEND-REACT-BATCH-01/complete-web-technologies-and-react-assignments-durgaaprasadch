@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: purple;
+      }
+      a:active {
+        color: red;
+      }
+      h1:hover {
+        background-color: aqua;
+      }
+      input:focus {
+        border: 2px solid blue;
+      }
+
+      p:hover::before {
+        content: "This is ";
+      }
+
+      p:hover::after {
+        content: " for you";
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://flipkart.in">Click here</a>
+    <h1>This is hover</h1>
+
+    <input type="text" />
+
+    <p>Cart</p>
+  </body>
+</html>

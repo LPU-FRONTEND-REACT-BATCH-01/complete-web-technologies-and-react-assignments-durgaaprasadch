@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Selectors Demo</title>
+
+    <style>
+      /* 🔹 1. Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* 🔹 2. Element Selector */
+      body {
+        font-family: Arial;
+      }
+
+      /* 🔹 3. ID Selector */
+      #main-title {
+        color: darkblue;
+      }
+
+      /* 🔹 4. Class Selector */
+      .card {
+        background: #f4f4f4;
+        padding: 15px;
+        margin: 15px;
+      }
+
+      /* 🔹 5. Group Selector */
+      h2,
+      p {
+        margin-bottom: 10px;
+      }
+
+      /* 🔹 6. Descendant */
+      .card p {
+        color: gray;
+      }
+
+      /* 🔹 7. Child */
+      .card > h2 {
+        color: green;
+      }
+
+      /* 🔹 8. Adjacent Sibling */
+      h2 + p {
+        font-weight: bold;
+      }
+
+      /* 🔹 9. General Sibling */
+      h2 ~ ul {
+        background: #ddd;
+      }
+
+      /* 🔹 10. Attribute Selector */
+      input[type="text"] {
+        border: 2px solid blue;
+      }
+
+      /* 🔹 11. Pseudo-class */
+      a:hover {
+        color: red;
+      }
+
+      /* 🔹 first-child */
+      li:first-child {
+        color: purple;
+      }
+
+      /* 🔹 last-child */
+      li:last-child {
+        color: orange;
+      }
+
+      /* 🔹 nth-child */
+      li:nth-child(2) {
+        background: yellow;
+      }
+
+      /* 🔹 focus */
+      input:focus {
+        background: lightblue;
+      }
+
+      /* 🔹 12. Pseudo-elements */
+      p::first-letter {
+        font-size: 24px;
+        color: red;
+      }
+
+      p::before {
+        content: "... ";
+      }
+
+      p::after {
+        content: " ...";
+      }
+
+      /* 🔹 selection */
+      ::selection {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="main-title">CSS Selectors</h1>
+
+    <div class="card">
+      <h2>Section Title</h2>
+      <p>This is a paragraph for testing selectors.</p>
+
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+
+      <a href="#">Hover me</a>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Focus here" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Demo</title>
+
+    <style>
+      /* 🔹 Basic styling */
+      body {
+        font-family: Arial;
+      }
+
+      /* 🔹 last-child */
+      ul li:last-child {
+        background-color: aqua;
+      }
+
+      /* 🔹 first-child */
+      ul li:first-child {
+        color: red;
+      }
+
+      /* 🔹 nth-child */
+      ul li:nth-child(2) {
+        background-color: lightgray;
+      }
+
+      /* 🔹 hover */
+      li:hover {
+        background-color: yellow;
+        cursor: pointer;
+      }
+
+      /* 🔹 active */
+      li:active {
+        color: green;
+      }
+
+      /* 🔹 first-letter */
+      li::first-letter {
+        color: brown;
+        font-size: 20px;
+      }
+
+      /* 🔹 focus (for input) */
+      input:focus {
+        border: 2px solid blue;
+        outline: none;
+      }
+
+      /* 🔹 placeholder */
+      input::placeholder {
+        color: gray;
+      }
+
+      /* 🔹 selection */
+      ::selection {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>List Of Bikes</h1>
+    <ul>
+      <li>KTM</li>
+      <li>FZ</li>
+      <li>Apache</li>
+      <li>Royal Enfield</li>
+    </ul>
+
+    <h1>List Of Cars</h1>
+    <ul>
+      <li>Skoda</li>
+      <li>Volkswagen</li>
+      <li>TATA</li>
+      <li>MG</li>
+    </ul>
+
+    <br />
+  </body>
+</html>

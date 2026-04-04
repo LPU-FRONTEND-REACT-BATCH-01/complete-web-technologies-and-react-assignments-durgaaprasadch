@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        color: #333;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #444;
+      }
+
+      /* Links */
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      a:hover {
+        color: red;
+      }
+
+      /* Lists */
+      ul {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      ul li {
+        margin: 8px 0;
+      }
+
+      /* Table */
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        background: white;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #333;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #eee;
+      }
+
+      /* Form */
+      form {
+        background: white;
+        padding: 15px;
+        width: 300px;
+        border-radius: 8px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 10px;
+      }
+
+      input:focus,
+      select:focus {
+        border: 2px solid blue;
+        outline: none;
+      }
+
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>About</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iste
+      ratione magni deserunt temporibus quasi porro sapiente corporis illo autem
+      eligendi perspiciatis.
+    </p>
+
+    <h1>Our Locations</h1>
+
+    <ul>
+      <li>
+        USA
+        <ul>
+          <li><a href="https://www.flipkart.in">Flipkart</a></li>
+          <li><a href="https://www.amazon.in">Amazon</a></li>
+        </ul>
+      </li>
+
+      <li>
+        World
+        <ul>
+          <li><a href="https://www.amazon.com">Amazon</a></li>
+          <li><a href="https://www.puma.com">Puma</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Upcoming Classes</h1>
+
+    <table>
+      <tr>
+        <th>Location</th>
+        <th>Topics</th>
+      </tr>
+
+      <tr>
+        <td>New York</td>
+        <td>Java & OOPS</td>
+      </tr>
+
+      <tr>
+        <td>San Francisco</td>
+        <td>HTML & CSS</td>
+      </tr>
+    </table>
+
+    <h1>Register</h1>
+
+    <form method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="location">Location:</label>
+      <select id="location">
+        <option>--Choose--</option>
+        <option>Hyderabad</option>
+        <option>Delhi</option>
+        <option>Bangalore</option>
+      </select>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <br />
+      <label for="exp">Experience:</label>
+      <input type="text" id="exp" />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
