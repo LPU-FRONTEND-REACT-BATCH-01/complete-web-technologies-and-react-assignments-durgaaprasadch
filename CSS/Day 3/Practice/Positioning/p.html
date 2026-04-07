@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Positioning</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        height: 2000px; /* for scroll */
+        margin: 0;
+      }
+
+      h2 {
+        margin-top: 60px;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid #333;
+      }
+
+      .box {
+        width: 120px;
+        height: 120px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+      }
+
+      .static {
+        position: static;
+        background: gray;
+      }
+
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 30px;
+        background: blue;
+      }
+
+      .parent {
+        position: relative;
+        height: 200px;
+        background: #eee;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: red;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: green;
+        z-index: 1000;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+        background: orange;
+        padding: 10px;
+      }
+
+      .z-container {
+        position: relative;
+        height: 200px;
+      }
+
+      .z1 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: purple;
+        z-index: 1;
+      }
+
+      .z2 {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        background: black;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky">Sticky Navbar (Scroll Down)</div>
+
+    <div class="container">
+      <h2>1. Static</h2>
+      <div class="box static">Static</div>
+    </div>
+
+    <div class="container">
+      <h2>2. Relative</h2>
+      <div class="box relative">Relative</div>
+    </div>
+
+    <div class="container">
+      <h2>3. Absolute (inside relative parent)</h2>
+      <div class="parent">
+        <div class="box absolute">Absolute</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>4. Z-Index Layering</h2>
+      <div class="z-container">
+        <div class="box z1">z-index 1</div>
+        <div class="box z2">z-index 2</div>
+      </div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+  </body>
+</html>
