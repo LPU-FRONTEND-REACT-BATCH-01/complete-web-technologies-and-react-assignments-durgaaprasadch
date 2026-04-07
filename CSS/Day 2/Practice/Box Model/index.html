@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 20px;
+        background: lightblue;
+      }
+
+      /* Default = content-box */
+      .content-box {
+        box-sizing: content-box;
+      }
+
+      /* Better = border-box */
+      .border-box {
+        box-sizing: border-box;
+        background: lightgreen;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>content-box</h3>
+    <div class="box content-box">Content Box</div>
+
+    <h3>border-box</h3>
+    <div class="box border-box">Border Box</div>
+  </body>
+</html>

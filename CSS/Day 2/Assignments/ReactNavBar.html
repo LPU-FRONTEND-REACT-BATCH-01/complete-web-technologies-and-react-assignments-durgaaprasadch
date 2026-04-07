@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Navbar</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        background: #1b1f23;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 32px;
+        background: #1f232a;
+        color: white;
+        border-bottom: 1px solid #2c2f36;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #react img,
+      #nightmode,
+      #translation,
+      #github {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+      }
+
+      .nav-left span {
+        font-size: 14px;
+        color: #8b949e;
+      }
+
+      .nav-center {
+        position: relative;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-center input {
+        width: 320px;
+        padding: 8px 70px 8px 14px;
+        border-radius: 20px;
+        border: none;
+        background: #2d333b;
+        color: white;
+        outline: none;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+      }
+
+      .nav-right a {
+        text-decoration: none;
+        color: #c9d1d9;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .nav-right a:hover {
+        color: #61dafb;
+      }
+
+      .icon {
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <!-- LEFT -->
+      <div class="nav-left">
+        <div id="react"><img src="../../Assets/react_logo.svg" alt="" /></div>
+        <span>v19.2</span>
+      </div>
+
+      <!-- CENTER -->
+      <div class="nav-center">
+        <input
+          type="text"
+          placeholder="Search                                    ctrl k"
+        />
+      </div>
+
+      <!-- RIGHT -->
+      <div class="nav-right">
+        <a href="#">Learn</a>
+        <a href="#">Reference</a>
+        <a href="#">Community</a>
+        <a href="#">Blog</a>
+        <img
+          id="nightmode"
+          class="icon"
+          src="../../Assets/nightmode.webp"
+          alt="Night Mode"
+        />
+        <img
+          class="icon"
+          id="translation"
+          src="../../Assets/translation.webp"
+          alt="Translation"
+        />
+        <img
+          class="icon"
+          id="github"
+          src="../../Assets/github_logo.webp"
+          alt="github_logo"
+        />
+      </div>
+    </nav>
+  </body>
+</html>
