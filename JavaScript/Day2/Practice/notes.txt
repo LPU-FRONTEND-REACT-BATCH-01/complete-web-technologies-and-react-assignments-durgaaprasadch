@@ -1,0 +1,69 @@
+
+
+
+Scopes
+
+1.Global Scope
+2.Script Scope
+3.Local Scope
+4.Block Scope
+5.Lexical Scope
+
+
+1.Global Scope ---> Named Functions, Variables is 'var'
+
+2.Script Scope ---> Variables with 'let' and 'const'
+
+3.Local Scope  --->  
+
+
+------------------------------------------------------------------------------------------------------------
+1. Global Scope
+
+ Variables accessible everywhere in the program
+
+2. Script Scope
+
+ Top-level variables (let/const) that are global but not attached to the window object
+
+3. Local Scope (Function Scope)
+
+ Variables accessible only inside the function where they are defined
+
+4.  Block Scope
+
+ Variables (let/const) accessible only inside a {} block
+
+5.  Lexical Scope
+
+ Scope determined by where variables are written in code, not where they are called
+
+Global → everywhere
+Script → global but not window
+Local → inside function
+Block → inside {}
+Lexical → based on code structure
+ 
+------------------------------------------------------------------------------
+Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------

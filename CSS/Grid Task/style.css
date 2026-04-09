@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.container {
+  display: grid;
+
+grid-template: repeat(3, 120px) / repeat(4, 1fr);
+
+gap: 10px;
+width: 80%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+
+
+.box1 {
+  background: green;
+  grid-row: 1 / 4;
+}
+
+
+.box2 {
+  background: green;
+  grid-column: 2 / 4;
+}
+
+
+.box3 {
+  background: red;
+}
+
+
+.box4 {
+  background: orange;
+}
+
+.box5 {
+  background: red;
+}
+
+.box6 {
+  background: red;
+}
+
+.box7 {
+  background: orange;
+}
+
+
+.box8 {
+  background: green;
+  grid-column: 4;
+  grid-row: 2 / 4;
+}

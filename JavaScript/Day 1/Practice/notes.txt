@@ -1,0 +1,144 @@
+-----------JavaScript
+
+ JavaScript is a language used to make web pages interactive
+Runs in browser and also with Node.js
+
+----------to use JavaScript
+External
+<script src="script.js"></script>
+
+internal
+
+----------------------------------
+Variables
+
+Used to store data
+
+let a = 10;
+const b = 20;
+var c = 30;
+Simple meaning:
+let → value can change
+const → value cannot change
+var → old (avoid)
+
+-------------
+Output
+console.log("Hello");
+alert("Hello");
+
+-----------
+ Data Types
+
+ Types of values stored in variables
+ Primitive Data Types
+1. Number
+let a = 10;
+let b = 3.5;
+
+2. String
+let name = "Durga";
+
+3. Boolean
+let isOn = true;
+
+4. Undefined
+let x;
+console.log(x);
+
+declared but no value
+
+5. Null
+let y = null;
+
+ empty value (given by you)
+
+
+=-----------------------------------------------
+Non-Primitive
+Object
+let person = {
+  name: "Durga",
+  age: 21
+};
+Array
+let arr = [1, 2, 3];
+Function
+function greet() {
+  console.log("Hello");
+}
+ --------------------------------
+  typeof (check type)
+typeof 10        // number
+typeof "hi"      // string
+typeof true      // boolean
+
+
+
+
+-----------------------------------------------------------------------------------------------
+V8 Engine 
+
+ V8 JavaScript Engine is a program that runs JavaScript code
+
+In one line
+
+ V8 converts JavaScript into machine code so your computer can execute it
+
+ Where it is used
+Google Chrome
+Node.js
+
+  V8 (step by step)
+Takes your JS code
+Compiles it
+Runs it
+
+
+let a = 10;
+console.log(a);
+
+ V8:
+
+Reads code
+Converts it to machine instructions
+Executes → prints 10
+
+
+=-----------------------------
+ Important point
+
+ V8 is fast because it uses Just-In-Time (JIT) compilation
+(means it compiles while running)
+
+  flow
+-------------------------------------------------
+JS Code → V8 Engine → Machine Code → Output
+-------------------------------------------------
+ Don’t confuse this
+JavaScript = language
+V8 = engine that runs it
+
+---------------------------------------------------------
+V8 runs JavaScript
+Converts code to machine code
+Used in Chrome and Node.js
+Makes JS fast
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+                                        JS Code 
+                                           ↓
+                                        V8 Engine
+                                           ↓
+                                        Execution Context Created
+                                           ↓
+                                        Memory Phase
+                                           ↓
+                                        Execution Phase
+                                           ↓
+                                        Call Stack handles function calls
+
+
+-------------------------------------------------------------------------------------------------
