@@ -37,10 +37,3 @@
 //      console.log(value*3)
 // })
 
-
-let array = [1,2,3,4]
-let result = array.reduce((prev,current)=>{
-    return prev+current
-})
-
-console.log(result)

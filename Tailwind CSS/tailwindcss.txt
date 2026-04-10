@@ -22,3 +22,6 @@ Tailwind CSS
 flex {
     display:flex;
 }
+
+
+
