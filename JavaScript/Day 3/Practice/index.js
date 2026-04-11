@@ -95,3 +95,92 @@
 
 
 // -------------------------------------------------------
+
+// filter ()
+// array.filter((item) => condition)
+
+let nums = [1, 2, 3, 4, 5];
+
+let result = nums.filter(n => n > 2);
+
+console.log(result); // [3, 4, 5]
+
+
+
+// -------------------------------------------------------
+
+/*
+
+Spread vs Rest Operators (...)
+
+ Same symbol ...
+Different meaning based on where/how you use it
+
+ Spread Operator (EXPANDS )
+
+ Used to expand/unpack values
+
+ Array Example
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+
+console.log(arr2); // [1, 2, 3, 4, 5]
+
+ It spreads elements out
+
+ Object Example
+let user = { name: "Durga", age: 21 };
+
+let newUser = { ...user, city: "Delhi" };
+
+console.log(newUser);
+
+ Copies + adds new data
+
+Copy Array (important)
+let copy = [...arr1];
+
+Prevents modifying original array
+
+
+-----------------------------------------------------------------------------------------------
+Rest Operator (COLLECTS )
+
+ Used to gather multiple values into one
+
+Function Example
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+
+All arguments → collected into nums array
+
+Destructuring Example
+let [a, b, ...rest] = [1, 2, 3, 4, 5];
+
+console.log(rest); // [3, 4, 5]
+
+ Remaining values go into rest
+------------------------
+Key Difference
+-----------------------
+Operator
+
+Spread	Expand	[...arr]
+Rest	Collect	(...args)
+
+-----------------------------
+Easy Memory Trick
+
+Spread → “open”
+Rest → “pack”
+-------------------------------------------------------------------------------
+*/
+
+// -----------------------------------------------
+
+// Synchronous vs Asynchronous 
+
+
