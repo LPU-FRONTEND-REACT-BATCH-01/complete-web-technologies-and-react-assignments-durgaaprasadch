@@ -1,0 +1,44 @@
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Destructuring means:
+ Taking values out of an array and assigning them to variables in a single line.
+
+ ---------------------------------------------------------------------------------------------------------------
+
+Normal Way (Without Destructuring)
+let arr = [10, 20, 30];
+
+let a = arr[0];
+let b = arr[1];
+let c = arr[2];
+
+Too long, repetitive.
+
+
+-------------------------------------------------------------------------------------------
+Using Destructuring
+let arr = [10, 20, 30];
+
+let [a, b, c] = arr;
+
+console.log(a); // 10
+console.log(b); // 20
+console.log(c); // 30
+---------------------------------------------------------------------------------------
+
+
+                🔹 Swapping Variables (VERY IMPORTANT 🔥)
+                                    let a = 10;
+                                    let b = 20;
+
+                                    [a, b] = [b, a];
+
+                                    console.log(a); // 20
+                                    console.log(b); // 10
+
+                                    👉 No temp variable needed
+
+--------------------------------------
