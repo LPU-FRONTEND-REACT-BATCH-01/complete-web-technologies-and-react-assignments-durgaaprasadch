@@ -1,6 +1,5 @@
 const output = document.getElementById("output");
 
-// ---------- INITIAL DATA ----------
 if (!localStorage.getItem("products")) {
   localStorage.setItem("products", JSON.stringify([
     { id: 1, name: "Laptop", price: 50000 },
@@ -13,7 +12,15 @@ if (!localStorage.getItem("cart")) {
   localStorage.setItem("cart", JSON.stringify([]));
 }
 
-// ---------- SHOW PRODUCTS ----------
+
+function showSection(section) {
+  if (section === "products") {
+    showProducts();
+  } else if (section === "cart") {
+    showCart();
+  }
+}
+
 function showProducts() {
   const products = JSON.parse(localStorage.getItem("products"));
   output.innerHTML = "<h2>Products</h2>";
@@ -32,7 +39,6 @@ function showProducts() {
   });
 }
 
-// ---------- ADD TO CART ----------
 function addToCart(id) {
   const products = JSON.parse(localStorage.getItem("products"));
   const cart = JSON.parse(localStorage.getItem("cart"));
@@ -46,7 +52,6 @@ function addToCart(id) {
   alert("Added to cart!");
 }
 
-// ---------- SHOW CART ----------
 function showCart() {
   const cart = JSON.parse(localStorage.getItem("cart"));
   output.innerHTML = "<h2>My Cart</h2>";
@@ -79,7 +84,7 @@ function showCart() {
   output.appendChild(totalDiv);
 }
 
-// ---------- REMOVE FROM CART ----------
+
 function removeFromCart(index) {
   const cart = JSON.parse(localStorage.getItem("cart"));
 
@@ -88,4 +93,7 @@ function removeFromCart(index) {
   localStorage.setItem("cart", JSON.stringify(cart));
 
   showCart();
+}
+function goHome() {
+  output.innerHTML = "";
 }
