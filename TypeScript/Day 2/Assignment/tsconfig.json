@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "noEmitOnError": true,
+        "strict": true,
+        "target": "es2015",
+        "module": "commonjs",
+        "removeComments": false,
+        //"sourceMap": true
+
+    },
+    "include": ["./src"],
+    "exclude": [""]
+}
